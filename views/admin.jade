@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Admin
+body
+    form(action="/enter" method="POST")
+        div.container
+          h1 Add new User
+          label(for="email") Username
+          input(type="text" placeholder="Username" name="user" required)
+      
+          label(for="psw") Password
+          input(type="password" placeholder="Enter Password" name="psw" required)
+      
+          button(type="submit",class="registerbtn") Create
+        
+     form(action="/view" method="POST") 
+      button(type="submit") View Values

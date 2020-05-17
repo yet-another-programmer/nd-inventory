@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Enter Patient Details
+body
+    form(action="/pati" method="POST")
+        div.container
+          h1 Enter details
+          label(for="name") Patient Name
+          input(type="text" placeholder="name" name="patname" required) 
+      
+          label(for="age") Age
+          input(type="number" placeholder="Enter Age" name="age" required) 
+
+          label(for="gender") Sex
+          input(type="text" placeholder="Enter Gender" name="sex" required)
+
+          label(for="Hospital") Choose a hospital
+          select(name="hospital")
+             option(value="Base Hospital Delhi") Base Hospital Delhi
+             option(value="Base Hospital Lucknow") Base Hospital Lucknow
+             option(value="Command Hospital Central command") Command Hospital Central command
+             option(value="MH Ahmedabad") MH Ahmedabad
+             option(value="12 Airforce Hospital") 12 Airforce Hospital
+             option(value="7 Airforce Hospital") 7 Airforce Hospital
+        
+          label(for="phone") Phone
+          input(type="text" placeholder="Enter Phonenumber" name="ph" required)
+
+        
+          
+      
+    //-       button(type="submit",class="registerbtn") Enter
+    //- form(action="/red",method="POST")
+    //-       button(type="submit") get course
+
+      
