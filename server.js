@@ -196,7 +196,9 @@ app.post('/pati',function(req,res){
 // });
 
 
+app.set( 'port', ( process.env.PORT || 5000 ));
+app.listen( app.get( 'port' ), function() {
+  console.log( 'Node server is running on port ' + app.get( 'port' ));
+  });
 
 
-
-app.listen(3000);
